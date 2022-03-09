@@ -2,17 +2,19 @@ import React from 'react';
 // import { BrowserRouter } from 'react-router-dom'; 
 //bootstrap
 import '../../my-first-app/node_modules/bootstrap/dist/css/bootstrap.min.css';
-import Demo from './components/ReactHooks/Demo';
-
-
+import { DadaProvider } from './components/Tree/MyContext';
+import Son from './components/Tree/Son';
 
 const App = () => {
 
   return (
-    <div>
+    <div className="text-center">
 
-<Demo/>
-
+       <DadaProvider value = "Dada send to message puti">
+         
+         <Son/>
+         
+          </DadaProvider>
 
     </div>
   );

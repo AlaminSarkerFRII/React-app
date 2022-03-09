@@ -5,10 +5,10 @@ import { useState } from 'react'
 const Demo = () => {
 
     const [name,setName] = useState({
-        country : "Alamin Sarker"
+        country : "Bangladesh"
     });
 
-  const changeHandler =  ()=> {
+  const changeHandler = () => {
     setName({country: "Pakistan"})
   }
   
